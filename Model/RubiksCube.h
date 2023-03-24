@@ -40,11 +40,11 @@ public:
 
     virtual COLOR getColour(FACE face, unsigned row, unsigned col) const = 0;
 
-    static char getColourLetter(COLOR color);
+    static char getColorLetter(COLOR color);
 
     virtual bool isSolved() const = 0;
 
-static string getMove(MOVE move);
+    static string getMove(MOVE move);
 
     void print() const;
 
