@@ -191,6 +191,15 @@ void RubiksCube::print() const {
     cout << "\n";
 }
 
+vector<RubiksCube::MOVE> RubiksCube::randomShuffle(unsigned int times) {
+    vector<RubiksCube::MOVE> movePerformed;
+    for (unsigned int i = 0; i < times; ++i) {
+        unsigned int randomMove = std::rand() % 18;
+        movePerformed.push_back(static_cast<RubiksCube::MOVE>(randomMove));
+        this->performMove(static_cast<RubiksCube::MOVE>(randomMove));
+    }
+    return movePerformed;
+}
 
 string RubiksCube::getCornerColourString(uint8_t ind) const {
     return std::string();
