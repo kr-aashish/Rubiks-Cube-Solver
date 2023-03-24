@@ -1,3 +1,0 @@
-/Users/aashishkumar/Documents/RubiksCubeSolver/cmake-build-debug/CMakeFiles/RubicsCubeSolver.dir
-/Users/aashishkumar/Documents/RubiksCubeSolver/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/aashishkumar/Documents/RubiksCubeSolver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
