@@ -58,7 +58,7 @@ public:
 
     uint8_t getCornerIndex(uint8_t ind) const;
 
-    string getCornerOrientation(uint8_t ind) const;
+    uint8_t getCornerOrientation(uint8_t ind) const;
 
     virtual RubiksCube &f() =  0;
 
