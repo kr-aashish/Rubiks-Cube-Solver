@@ -255,10 +255,31 @@ string RubiksCube::getCornerColourString(uint8_t ind) const {
     }
 }
 
-string RubiksCube::getCornerIndex(uint8_t ind) const {
-    return std::string();
-}
+uint8_t RubiksCube::getCornerIndex(uint8_t ind) const {
+    string corner;
+    corner = getCornerIndex(ind);
 
-string RubiksCube::getCornerOrientation(uint8_t ind) const {
-    return std::string();
+    uint8_t result = 0;
+    for (auto c : corner) {
+        if (c != 'W' and c != 'Y')
+            continue;
+        if (c == 'Y')
+            result |= (1 << 2);
+    }
+
+    for (auto c : corner) {
+        if (c != 'R' and c != 'O')
+            continue;
+        if (c == 'R')
+            result |= (1 << 1);
+    }
+
+    for (auto c : corner) {
+        if (c != 'B' and c != 'G')
+            continue;
+        if (c == 'G')
+            result |= (1 << 0);
+    }
+
+    return result;
 }

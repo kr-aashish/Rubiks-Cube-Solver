@@ -56,7 +56,7 @@ public:
 
     string getCornerColourString(uint8_t ind) const;
 
-    string getCornerIndex(uint8_t ind) const;
+    uint8_t getCornerIndex(uint8_t ind) const;
 
     string getCornerOrientation(uint8_t ind) const;
 
